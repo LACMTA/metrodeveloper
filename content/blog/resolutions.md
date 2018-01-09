@@ -1,7 +1,7 @@
 +++
 author = "Doug Goodwin"
 categories = ["METRO"]
-date = "2018-01-08"
+date = "2018-01-08T00:00:00Z"
 description = "Time for an update"
 featured = "unionstation.jpg"
 featuredalt = "Union Station completion, 1939"
@@ -11,13 +11,12 @@ title = "Metro Developer gets a facelift"
 type = "post"
 
 +++
-
 ## developer.metro.net will be 9 years old this June!
 
-Preserve as much as possible. 
+Preserve as much as possible.
 
-Move away from Wordpress. 
+Move away from Wordpress.
 
-Replace the commenting engine with Disqus
+Replace the commenting engine with Graph Comment
 
 Retire the API keys
