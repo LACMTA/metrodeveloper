@@ -1,0 +1,1320 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        
+            
+                <title>Metro Bus &amp; Rail Real-time Arrivals </title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.32.3" />
+        
+
+
+        
+            <meta name="author" content="Doug Goodwin">
+        
+        
+            <meta name="description" content="Metro&#39;s Realtime Application Programming Interface (API) lives at http://api.metro.net/. It gives you access to the positions of Metro vehicles on their routes in real time.">
+        
+
+        <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Metro Bus &amp; Rail Real-time Arrivals "/>
+<meta name="twitter:description" content="Metro&#39;s Realtime Application Programming Interface (API) lives at http://api.metro.net/. It gives you access to the positions of Metro vehicles on their routes in real time."/>
+<meta name="twitter:site" content="@metrolosangeles"/>
+
+        <meta property="og:title" content="Metro Bus &amp; Rail Real-time Arrivals " />
+<meta property="og:description" content="Metro&#39;s Realtime Application Programming Interface (API) lives at http://api.metro.net/. It gives you access to the positions of Metro vehicles on their routes in real time." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/resources/realtime/" />
+
+
+
+<meta property="article:published_time" content="2017-06-22T00:00:00&#43;00:00"/>
+
+<meta property="article:modified_time" content="2017-06-22T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+        
+<meta itemprop="name" content="Metro Bus &amp; Rail Real-time Arrivals ">
+<meta itemprop="description" content="Metro&#39;s Realtime Application Programming Interface (API) lives at http://api.metro.net/. It gives you access to the positions of Metro vehicles on their routes in real time.">
+
+
+<meta itemprop="datePublished" content="2017-06-22T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2017-06-22T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="596">
+
+
+
+<meta itemprop="keywords" content="" />
+
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/add-on.css">
+        
+
+        
+            
+                
+            
+        
+
+      
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-9140522-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+      <h1><a href="/">resources</a></h1>
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="/">
+                            <i class="fa fa-home">&nbsp;</i>Home
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/terms/">
+                            <i class="fa fa-id-card-o">&nbsp;</i>Terms
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/blog/">
+                            <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/resources/">
+                            <i class="fa fa-list">&nbsp;</i>Resources
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/categories/">
+                            <i class="fa fa-sitemap">&nbsp;</i>Categories
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/contact/">
+                            <i class="fa fa-envelope-o">&nbsp;</i>Contact
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="as_sitesearch" value="/">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="as_sitesearch" value="/">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="/">
+                            <h3>
+                                <i class="fa fa-home">&nbsp;</i>Home
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/terms/">
+                            <h3>
+                                <i class="fa fa-id-card-o">&nbsp;</i>Terms
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/blog/">
+                            <h3>
+                                <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/resources/">
+                            <h3>
+                                <i class="fa fa-list">&nbsp;</i>Resources
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/">
+                            <h3>
+                                <i class="fa fa-sitemap">&nbsp;</i>Categories
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/contact/">
+                            <h3>
+                                <i class="fa fa-envelope-o">&nbsp;</i>Contact
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section id="recent-posts">
+            <div class="mini-posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/resolutions/">Metro Developer gets a facelift</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2018-01-08'>
+                                    January 8, 2018</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="/blog/resolutions/" class="image featured">
+            <img src="/img/2018/01/unionstation.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/hellofromdouggoodwin/">Hello from Doug Goodwin</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2009-06-09'>
+                                    June 9, 2009</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="/blog/hellofromdouggoodwin/" class="image featured">
+            <img src="/img/2009/06/" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/hellofromchilam/">Welcome!</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2009-06-03'>
+                                    June 3, 2009</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="/blog/hellofromchilam/" class="image featured">
+            <img src="/img/2009/06/welcomeaboard.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/routesyisdead/">What Killed Routesy?</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2009-06-01'>
+                                    June 1, 2009</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="/blog/routesyisdead/" class="image featured">
+            <img src="/img/2009/062009/06/doolin_after2000detail_600.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+
+                
+            </div>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+<hr/>
+
+<li>
+  <a href="//twitter.com/share?url=%2fresources%2frealtime%2f&text=Metro%20Bus%20%26%20Rail%20Real-time%20Arrivals%20&via=metrolosangeles" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fresources%2frealtime%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+<li>
+  <a href="//reddit.com/submit?url=%2fresources%2frealtime%2f&title=Metro%20Bus%20%26%20Rail%20Real-time%20Arrivals%20" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="//www.pinterest.com/pin/create/button/?url=%2fresources%2frealtime%2f&description=Metro%20Bus%20%26%20Rail%20Real-time%20Arrivals%20" target="_blank" class="share-btn pinterest">
+    <i class="fa fa-pinterest-p"></i>
+    <p>Pinterest</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by Doug%20Goodwin&body=%2fresources%2frealtime%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+  <header>
+    <div class="title">
+        
+            <h1><a href="/resources/realtime/">Metro Bus &amp; Rail Real-time Arrivals </a></h1>
+            
+        
+        
+            <p>Metro&#39;s Realtime Application Programming Interface (API) lives at http://api.metro.net/. It gives you access to the positions of Metro vehicles on their routes in real time.</p>
+        
+    </div>
+    <div class="meta">
+
+      <span class="author">Doug Goodwin</span>
+      <span class="author"></span>
+      
+        <a href="#" target="_blank"></a>
+      
+    </div>
+</header>
+
+
+  
+  <div id="content">
+    
+
+<h2 id="metro-bus-rail-real-time-arrivals">Metro Bus &amp; Rail Real-time Arrivals</h2>
+
+<p>Metro&rsquo;s Realtime Application Programming Interface (API) lives at <a href="http://api.metro.net/">http://api.metro.net/</a>. It gives you access to the positions of Metro vehicles on their routes in real time.</p>
+
+<p>The Realtime API is a RESTful web service designed to serve bus location data gathered by our Advanced Transportation Management System (ATMS) and the new Nextrip prediction engine. This is the result of years of difficult work refining the information we collect from the GPS trackers on every bus. Sometimes that data arrives too late to give us useful information. Our busses serve 1433 square miles. Whenever the buses travel into a radio shadow we need to make a prediction about the location of the bus. This is where Nextrip comes into play.</p>
+
+<p>Our Nextrip service is provided by NextBus, if you are familiar with their XML structure — you are welcome to retrieve the data from them.</p>
+
+<p>Please review NextBus&rsquo; XML Documentation
+Agency ID for Metro Bus = lametro
+Agency ID for Metro Rail = lametro-rail
+You may now easily build and deploy custom applications using Metro&rsquo;s data as a foundation. If you want to build a mobile application that plots the position of Metro&rsquo;s Rapid busses on a map then this is the API for you. The interface gives your program access to collections and elements. Collections retrieve lists of element URIs. Element URIs retrieve a representation of the element. Only HTTP GET operations are allowed.</p>
+
+<p>This new section of the site is here to document the interface and give you some examples of how you might use it. We need more examples! Please help us help you by including your code snippets in the comments area.</p>
+
+<p>Try it out and let us know what you think. We hope you enjoy it!</p>
+
+<p>-Metro Developer</p>
+
+<p>Media types available from api.metro.net
+The API delivers three different flavors of data: XML, JSON, and JSONP. This table lists the formats and their MIME types.</p>
+
+<table>
+<thead>
+<tr>
+<th>MIME type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>text/xml</td>
+<td>XML is an encoded document format with arbitrary structure best consumed by machines.</td>
+</tr>
+
+<tr>
+<td>application/json</td>
+<td>JSON (an acronym for JavaScript Object Notation) is a lightweight text-based open standard designed for the exchange of human-readable data. This is the default.</td>
+</tr>
+
+<tr>
+<td>application/javascript</td>
+<td>Also known as JSON-P or JSON with padding. This is a JSON payload wrapped in a callback function. JSON-P is designed to be evaluated in the browser within a &lt;script&gt; element.</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="metro-s-realtime-api-collections">Metro&rsquo;s Realtime API Collections</h2>
+
+<p>The interface is divided into four collections: Agency, Routes, Stops, and Vehicles. Each collection returns a list of elements. The element IDs tacitly suggest the URL for the element.</p>
+
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>agencies</td>
+<td>&ldquo;lametro&rdquo; is the only available Agency element (for now). Agency ID is case-sensitive, and should be all lower-cased.</td>
+</tr>
+
+<tr>
+<td>routes</td>
+<td>A list of routes available at the agency.</td>
+</tr>
+
+<tr>
+<td>stops</td>
+<td>A list of stops served by the route.</td>
+</tr>
+
+<tr>
+<td>vehicles</td>
+<td>A list of the current position of all vehicles belonging to the agency.</td>
+</tr>
+</tbody>
+</table>
+
+<p>Consider these examples. The first retrieves a collection of routes operated by agency LA Metro. The second retrieves predictions for element stop 6033 . These links open in a new browser window. Go ahead and try them!</p>
+
+<ul>
+<li><a href="http://api.metro.net/agencies/lametro/routes/">http://api.metro.net/agencies/lametro/routes/</a></li>
+<li><a href="http://api.metro.net/agencies/lametro/stops/6033/predictions/">http://api.metro.net/agencies/lametro/stops/6033/predictions/</a></li>
+</ul>
+
+<p>Check the examples page for more.</p>
+
+<h2 id="methods-available-for-most-elements">Methods available for most elements</h2>
+
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>info</td>
+<td>General information about the element.</td>
+</tr>
+
+<tr>
+<td>messages</td>
+<td>Service update, alerts, and other messages relevant to the element.</td>
+</tr>
+
+<tr>
+<td>predictions</td>
+<td>Predictions for the element.</td>
+</tr>
+
+<tr>
+<td>Links to documentation</td>
+<td>Use JSON-P if you&rsquo;re writing JQuery code that requires a callback function.</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th>Page</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>OVERVIEW</td>
+<td></td>
+</tr>
+
+<tr>
+<td><a href="http://developer.metro.net/realtime-api-overview/">http://developer.metro.net/realtime-api-overview/</a></td>
+<td>This page</td>
+</tr>
+
+<tr>
+<td>MIME TYPES</td>
+<td></td>
+</tr>
+
+<tr>
+<td><a href="http://developer.metro.net/realtime-api-returning-json/">http://developer.metro.net/realtime-api-returning-json/</a></td>
+<td>application/json</td>
+</tr>
+
+<tr>
+<td><a href="http://developer.metro.net/realtime-api-returning-json-p/">http://developer.metro.net/realtime-api-returning-json-p/</a></td>
+<td>application/javascript</td>
+</tr>
+
+<tr>
+<td><a href="http://developer.metro.net/realtime-api-returning-xml/">http://developer.metro.net/realtime-api-returning-xml/</a></td>
+<td>text/xml</td>
+</tr>
+
+<tr>
+<td>COLLECTIONS</td>
+<td></td>
+</tr>
+
+<tr>
+<td><a href="http://developer.metro.net/realtime-api-routes">http://developer.metro.net/realtime-api-routes</a></td>
+<td>Route methods</td>
+</tr>
+
+<tr>
+<td>EXAMPLES</td>
+<td></td>
+</tr>
+
+<tr>
+<td><a href="http://developer.metro.net/realtime-api-examples">http://developer.metro.net/realtime-api-examples</a></td>
+<td>Grab bag of examples</td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+
+
+ 
+    <section id="social-share">
+      <ul class="icons">
+        
+<hr/>
+
+<li>
+  <a href="//twitter.com/share?url=%2fresources%2frealtime%2f&text=Metro%20Bus%20%26%20Rail%20Real-time%20Arrivals%20&via=metrolosangeles" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fresources%2frealtime%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+<li>
+  <a href="//reddit.com/submit?url=%2fresources%2frealtime%2f&title=Metro%20Bus%20%26%20Rail%20Real-time%20Arrivals%20" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="//www.pinterest.com/pin/create/button/?url=%2fresources%2frealtime%2f&description=Metro%20Bus%20%26%20Rail%20Real-time%20Arrivals%20" target="_blank" class="share-btn pinterest">
+    <i class="fa fa-pinterest-p"></i>
+    <p>Pinterest</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by Doug%20Goodwin&body=%2fresources%2frealtime%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+      </ul>
+    </section>
+  
+
+  <footer>
+    <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+
+                    
+                        <i class="fa fa-sitemap">&nbsp;</i>
+                    
+
+                    
+                        Categories
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='/categories/data'>DATA</a></li>
+    
+        <li><a href='/categories/realtime'>REALTIME</a></li>
+    
+</ul>
+
+  </footer>
+</article>
+
+
+    </div>
+    
+<section id="sidebar">
+
+  
+  <section id="intro">
+    
+    
+      
+        <a href='/'><img src="/img/main/logo-sm.jpg" class="intro-circle" width="" alt="Metro Developer" /></a>
+      
+    
+    
+      <header>
+        <h2>Metro Developer</h2>
+        <p>Technical information for Metro riders and data lovers. Over 10k subscribers!<i class='fa fa-hand-peace-o'></i></p>
+      </header>
+    
+    
+      <ul class="icons">
+        
+          <li>
+            <a href="" type="application/rss+xml" target="_blank" title="RSS" class="fa fa-rss"></a>
+          </li>
+        
+        
+  <li><a href="//github.com/orgs/LACMTA/dashboard" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+  <li><a href="//gitlab.com/LACMTA/gtfs_bus" target="_blank" title="GitLab" class="fa fa-gitlab"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//flickr.com/photos/metrolibraryarchive" target="_blank" title="Flickr" class="fa fa-flickr"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//facebook.com/losangelesmetro" target="_blank" title="Facebook" class="fa fa-facebook"></a></li>
+
+
+
+
+
+
+
+
+
+  <li><a href="//youtube.com/channel/UC6mi3TVa60sTDgnuSNocbMw" target="_blank" title="YouTube" class="fa fa-youtube"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//twitter.com/metrolosangeles" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:webmaster@metro.net" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+  </section>
+
+  
+  <section id="recent-posts">
+    <div class="mini-posts">
+      <header>
+        <h3>Recent Posts</h3>
+      </header>
+      <div class="posts-container">
+        
+
+        
+          
+        
+
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/resolutions/">Metro Developer gets a facelift</a>
+              </h3>
+              
+              <time class="published" datetime='2018-01-08'>
+                January 8, 2018
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="/blog/resolutions/" class="image featured">
+            <img src="/img/2018/01/unionstation.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/hellofromdouggoodwin/">Hello from Doug Goodwin</a>
+              </h3>
+              
+              <time class="published" datetime='2009-06-09'>
+                June 9, 2009
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="/blog/hellofromdouggoodwin/" class="image featured">
+            <img src="/date2009/06/" alt="">
+        </a>
+    
+
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/hellofromchilam/">Welcome!</a>
+              </h3>
+              
+              <time class="published" datetime='2009-06-03'>
+                June 3, 2009
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="/blog/hellofromchilam/" class="image featured">
+            <img src="/img/2009/062009/06/welcomeaboard.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/routesyisdead/">What Killed Routesy?</a>
+              </h3>
+              
+              <time class="published" datetime='2009-06-01'>
+                June 1, 2009
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+        
+        
+        
+
+        <a href="/blog/routesyisdead/" class="image featured">
+            <img src="/img/2009/06/doolin_after2000detail_600.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+      </div>
+
+      
+    </div>
+  </section>
+
+  
+  
+  
+  
+    <section id="categories">
+      <header>
+        <h3>
+          <a href="/categories/">Categories</a>
+        </h3>
+      </header>
+        
+          
+        
+
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/data/">DATA</a>
+                <span style="float:right;">6</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/metro/">METRO</a>
+                <span style="float:right;">3</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/bikes/">BIKES</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/gis/">GIS</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/policy/">POLICY</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/property/">PROPERTY</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/realtime/">REALTIME</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/schedules/">SCHEDULES</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+    </section>
+  
+
+  
+  
+    <section id="mini-bio">
+      <h3>About</h1>
+      <p>Use this site to learn how to use Metro data in web & mobile applications.</p>
+      <a href="/about/" class="button">Learn More</a>
+    </section>
+  
+
+  
+  <section id="footer">
+    
+      <ul class="icons">
+        
+          <li>
+            <a href="" type="application/rss+xml" target="_blank" title="RSS" class="fa fa-rss"></a>
+          </li>
+        
+        
+  <li><a href="//github.com/orgs/LACMTA/dashboard" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+  <li><a href="//gitlab.com/LACMTA/gtfs_bus" target="_blank" title="GitLab" class="fa fa-gitlab"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//flickr.com/photos/metrolibraryarchive" target="_blank" title="Flickr" class="fa fa-flickr"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//facebook.com/losangelesmetro" target="_blank" title="Facebook" class="fa fa-facebook"></a></li>
+
+
+
+
+
+
+
+
+
+  <li><a href="//youtube.com/channel/UC6mi3TVa60sTDgnuSNocbMw" target="_blank" title="YouTube" class="fa fa-youtube"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//twitter.com/metrolosangeles" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:webmaster@metro.net" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+    <p class="copyright">
+      
+        &copy; 2018
+        
+          Metro Developer
+        
+      .
+      Powered by <a href="//gohugo.io" target="_blank">Hugo</a>
+    </p>
+  </section>
+</section>
+
+    </div>
+    <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+    
+
+    
+      
+    
+
+    
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+      <script src="/js/util.js"></script>
+      <script src="/js/main.js"></script>
+      <script src="/js/backToTop.js"></script>
+    
+
+    
+      
+        
+      
+    
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

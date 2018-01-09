@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>REALTIME on Metro Developer</title>
+    <link>/categories/realtime/</link>
+    <description>Recent content in REALTIME on Metro Developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Jun 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/realtime/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Metro Bus &amp; Rail Real-time Arrivals </title>
+      <link>/resources/realtime/</link>
+      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/realtime/</guid>
+      <description>Metro Bus &amp;amp; Rail Real-time Arrivals Metro&amp;rsquo;s Realtime Application Programming Interface (API) lives at http://api.metro.net/. It gives you access to the positions of Metro vehicles on their routes in real time.
+The Realtime API is a RESTful web service designed to serve bus location data gathered by our Advanced Transportation Management System (ATMS) and the new Nextrip prediction engine. This is the result of years of difficult work refining the information we collect from the GPS trackers on every bus.</description>
+    </item>
+    
+  </channel>
+</rss>

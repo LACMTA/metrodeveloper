@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SCHEDULES on Metro Developer</title>
+    <link>/categories/schedules/</link>
+    <description>Recent content in SCHEDULES on Metro Developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Jun 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/schedules/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Metro Bus &amp; Rail GTFS Schedule Data</title>
+      <link>/resources/schedules/</link>
+      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/schedules/</guid>
+      <description>Overview The Google Transit Feed Specification is an open format that Google created to allow transit agencies to easily provide schedule data to Google Transit. However, Google encourages its use for other applications, and it’s available under a Creative Commons Attribution-ShareAlike (free) license.
+Publicly available GTFS feeds A number of transit agencies and operators have already published their schedule data in GTFS format for developers to use.</description>
+    </item>
+    
+  </channel>
+</rss>

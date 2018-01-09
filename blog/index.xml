@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Metro Developer</title>
+    <link>/blog/</link>
+    <description>Recent content in Blog on Metro Developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Metro Developer gets a facelift</title>
+      <link>/blog/resolutions/</link>
+      <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/resolutions/</guid>
+      <description>developer.metro.net will be 9 years old this June! Preserve as much as possible.
+Move away from Wordpress.
+Replace the commenting engine with Disqus
+Retire the API keys</description>
+    </item>
+    
+    <item>
+      <title>Hello from Doug Goodwin</title>
+      <link>/blog/hellofromdouggoodwin/</link>
+      <pubDate>Tue, 09 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/hellofromdouggoodwin/</guid>
+      <description>Hello Developers! I haven&amp;rsquo;t introduced myself properly yet. I am the Lead Developer and Architect fro Metro.net. I work for Metro&amp;rsquo;s Dept. of Creative Services. I will save a more general introduction for another post. But first I would like to dive into this discussion the GTFS data set.
+michichan makes good observations about our scheduling, especially how we define lines and routes. I am not an expert in this area, but I know that the size of our system compels us to make these kinds of articulations in the data.</description>
+    </item>
+    
+    <item>
+      <title>Welcome!</title>
+      <link>/blog/hellofromchilam/</link>
+      <pubDate>Wed, 03 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/hellofromchilam/</guid>
+      <description>Hello everyone, welcome to Metro&amp;rsquo;s new developer site. Metro.net/developer is our new technical resource site meant to attract a community of developers and foster innovative technology. This is the place to share data with interested groups including developers as well as academics, and transit partners. We are launching with two types of data and the start of a web service.
+As this is a new effort for Metro, we hope to make more data and resources available as they are ready.</description>
+    </item>
+    
+    <item>
+      <title>What Killed Routesy?</title>
+      <link>/blog/routesyisdead/</link>
+      <pubDate>Mon, 01 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/routesyisdead/</guid>
+      <description>There&amp;rsquo;s an interesting development in public data access playing out in the Bay Area. A favorite iPhone application called &amp;ldquo;Routesy&amp;rdquo; has ceased to function. Broken iPhone apps aren&amp;rsquo;t generally newsworthy except in this case the failure was caused by denial to public data. Steven Peterson, a developer from San Francisco, built Routesy to take the guesswork out of using public transportation. Routesy works like this: after grabbing your current location from the iPhone or iPod Touch hardware, the application scrapes operations data from nextmuni.</description>
+    </item>
+    
+  </channel>
+</rss>

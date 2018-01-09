@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>POLICY on Metro Developer</title>
+    <link>/categories/policy/</link>
+    <description>Recent content in POLICY on Metro Developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jun 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/policy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What Killed Routesy?</title>
+      <link>/blog/routesyisdead/</link>
+      <pubDate>Mon, 01 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/routesyisdead/</guid>
+      <description>There&amp;rsquo;s an interesting development in public data access playing out in the Bay Area. A favorite iPhone application called &amp;ldquo;Routesy&amp;rdquo; has ceased to function. Broken iPhone apps aren&amp;rsquo;t generally newsworthy except in this case the failure was caused by denial to public data. Steven Peterson, a developer from San Francisco, built Routesy to take the guesswork out of using public transportation. Routesy works like this: after grabbing your current location from the iPhone or iPod Touch hardware, the application scrapes operations data from nextmuni.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DATA on Metro Developer</title>
+    <link>/categories/data/</link>
+    <description>Recent content in DATA on Metro Developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Jun 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/data/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>L.A. County Bikeways Data</title>
+      <link>/resources/bikes/</link>
+      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/bikes/</guid>
+      <description>Metro Bike Map The updated Metro Bike Map is a collaborative effort between Metro Communications, ITS, Planning, and local jurisdictions across the county. In addition to providing updated information on new Class I, II and III bike facilities built since 2006, the new map contains several new features including:
+ topographical relief, insets that provide additional geographical coverage and enlarged views of certain key areas, and a Forest Stewardship Council (FSC) rating certifying that the map was produced using sustainable practices.</description>
+    </item>
+    
+    <item>
+      <title>Metro Bus &amp; Rail GIS Data</title>
+      <link>/resources/gis/</link>
+      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/gis/</guid>
+      <description>Metro Bus Line Shapefiles The Metro Bus Line Zip File contains 5 shapefiles that cover all Metro Bus Lines. A shapefile is a set of 3 to 7 interrelated files that can be used with mapping (GIS) software. These technical files that have no other application; you must have GIS software to use them. The shapefiles are redrawn every six months, typically in June and December. We’ll try to post them within six weeks of changes.</description>
+    </item>
+    
+    <item>
+      <title>Metro Bus &amp; Rail GTFS Schedule Data</title>
+      <link>/resources/schedules/</link>
+      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/schedules/</guid>
+      <description>Overview The Google Transit Feed Specification is an open format that Google created to allow transit agencies to easily provide schedule data to Google Transit. However, Google encourages its use for other applications, and it’s available under a Creative Commons Attribution-ShareAlike (free) license.
+Publicly available GTFS feeds A number of transit agencies and operators have already published their schedule data in GTFS format for developers to use.</description>
+    </item>
+    
+    <item>
+      <title>Metro Bus &amp; Rail Real-time Arrivals </title>
+      <link>/resources/realtime/</link>
+      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/realtime/</guid>
+      <description>Metro Bus &amp;amp; Rail Real-time Arrivals Metro&amp;rsquo;s Realtime Application Programming Interface (API) lives at http://api.metro.net/. It gives you access to the positions of Metro vehicles on their routes in real time.
+The Realtime API is a RESTful web service designed to serve bus location data gathered by our Advanced Transportation Management System (ATMS) and the new Nextrip prediction engine. This is the result of years of difficult work refining the information we collect from the GPS trackers on every bus.</description>
+    </item>
+    
+    <item>
+      <title>Metro Right-of-Way Data</title>
+      <link>/resources/right-of-way/</link>
+      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/right-of-way/</guid>
+      <description> Metro Right-of-Way GIS Data Overview </description>
+    </item>
+    
+    <item>
+      <title>What Killed Routesy?</title>
+      <link>/blog/routesyisdead/</link>
+      <pubDate>Mon, 01 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/routesyisdead/</guid>
+      <description>There&amp;rsquo;s an interesting development in public data access playing out in the Bay Area. A favorite iPhone application called &amp;ldquo;Routesy&amp;rdquo; has ceased to function. Broken iPhone apps aren&amp;rsquo;t generally newsworthy except in this case the failure was caused by denial to public data. Steven Peterson, a developer from San Francisco, built Routesy to take the guesswork out of using public transportation. Routesy works like this: after grabbing your current location from the iPhone or iPod Touch hardware, the application scrapes operations data from nextmuni.</description>
+    </item>
+    
+  </channel>
+</rss>

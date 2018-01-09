@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Metro Developer</title>
+    <link>/categories/</link>
+    <description>Recent content in Categories on Metro Developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Jun 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>BIKES</title>
+      <link>/categories/bikes/</link>
+      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/bikes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DATA</title>
+      <link>/categories/data/</link>
+      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GIS</title>
+      <link>/categories/gis/</link>
+      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/gis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>METRO</title>
+      <link>/categories/metro/</link>
+      <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/metro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>POLICY</title>
+      <link>/categories/policy/</link>
+      <pubDate>Mon, 01 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/policy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PROPERTY</title>
+      <link>/categories/property/</link>
+      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/property/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>REALTIME</title>
+      <link>/categories/realtime/</link>
+      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/realtime/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SCHEDULES</title>
+      <link>/categories/schedules/</link>
+      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/schedules/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

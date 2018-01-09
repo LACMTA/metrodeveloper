@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BIKES on Metro Developer</title>
+    <link>/categories/bikes/</link>
+    <description>Recent content in BIKES on Metro Developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Jun 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/bikes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>L.A. County Bikeways Data</title>
+      <link>/resources/bikes/</link>
+      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/bikes/</guid>
+      <description>Metro Bike Map The updated Metro Bike Map is a collaborative effort between Metro Communications, ITS, Planning, and local jurisdictions across the county. In addition to providing updated information on new Class I, II and III bike facilities built since 2006, the new map contains several new features including:
+ topographical relief, insets that provide additional geographical coverage and enlarged views of certain key areas, and a Forest Stewardship Council (FSC) rating certifying that the map was produced using sustainable practices.</description>
+    </item>
+    
+  </channel>
+</rss>
