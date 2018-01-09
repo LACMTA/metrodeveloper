@@ -1,7 +1,7 @@
 +++
 author = "Doug Goodwin"
-categories = ["DATA","POLICY"]
-date = "2009-06-01"
+categories = ["DATA", "POLICY"]
+date = "2009-06-01T00:00:00Z"
 description = "Public policy change kills popular mobile application"
 featured = "doolin_after2000detail_600.jpg"
 featuredalt = "public policy"
@@ -11,7 +11,6 @@ title = "What Killed Routesy?"
 type = "post"
 
 +++
-
 ### There's an interesting development in public data access playing out in the Bay Area. A favorite iPhone application called "Routesy" has ceased to function. Broken iPhone apps aren't generally newsworthy except in this case the failure was caused by denial to public data.
 
 Steven Peterson, a developer from San Francisco, built Routesy to take the guesswork out of using public transportation. Routesy works like this: after grabbing your current location from the iPhone or iPod Touch hardware, the application scrapes operations data from nextmuni.com, a website operated by NextBus Information Systems Inc. (NBIS). Routesy then lets you know when the next vehicle will arrive at the stops closest to you.
