@@ -1,7 +1,7 @@
 +++
 author = "Lan-Chi Lam"
 categories = ["METRO"]
-date = "2009-06-03"
+date = "2009-06-03T00:00:00Z"
 description = ""
 featured = "welcomeaboard.jpg"
 featuredalt = "Welcome"
@@ -11,7 +11,6 @@ title = "Welcome!"
 type = "post"
 
 +++
-
 ## Hello everyone, welcome to Metro's new developer site.
 
 Metro.net/developer is our new technical resource site meant to attract a community of developers and foster innovative technology. This is the place to share data with interested groups including developers as well as academics, and transit partners. We are launching with two types of data and the start of a web service.
@@ -22,4 +21,4 @@ In addition to news about Metro data, we'll also post updates about our current 
 
 Thanks for stopping by,
 
-Lan-Chi Lam, Interactive Design Manager (Metro)
+**Lan-Chi Lam** Interactive Design Manager (Metro)
