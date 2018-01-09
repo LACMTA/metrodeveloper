@@ -25,7 +25,7 @@ I find it difficult to defend either position. Peterson should have worked out a
 
 According to a quote in an article in SFAppeal, Muni spokesperson Judson True is lucid on the matter of ownership of the data:
 
-> Muni owns the data in question and that the public is, of course, entitled to access [that data].... Muni is committed to finding ways to make it easier to get to it. So that means that independent developers should have unfettered access to develop whatever nifty little apps they want.
+> Muni owns the data in question and that the public is, of course, entitled to access [that data]... Muni is committed to finding ways to make it easier to get to it. So that means that independent developers should have unfettered access to develop whatever nifty little apps they want.
 
 Is there a viable business model in providing special access to public data? Can Peterson and NBIS, Inc. be seen as competitors in this space? Is this an indication of a new commercial phase in the Internet? The phase where tolls may be collected by entrepreneurs who put public resources (in this case data) where they are most needed.
 
