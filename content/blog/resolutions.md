@@ -19,4 +19,4 @@ Move away from Wordpress.
 
 Replace the commenting engine with Graph Comment
 
-Retire the API keys
+Retire the API keys and use GC IDs instead (?)
