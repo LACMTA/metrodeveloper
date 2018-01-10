@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "lacmta.github.io/metrodeveloper/"
 languageCode = "en-us"
 title = "Metro Developer"
 theme = "hugo-future-imperfect"
